@@ -1,0 +1,40 @@
+{
+  "name": "architecture-patterns-with-python-in-typescript",
+  "type": "module",
+  "module": "index.ts",
+  "scripts": {
+    "lint": "eslint \"**/*.@(ts|mts|js|cjs|mjs)\"",
+    "lint:fix": "npm run lint -- --fix",
+    "start:ts": "bun index.ts",
+    "start:ts:debug": "bun --inspect-brk index.ts",
+    "test": "bun test unit",
+    "test:e2e": "bun test e2e --preload ./tests/e2eTestsSetup.ts",
+    "test:e2e:watch": "bun test e2e --preload ./tests/e2eTestsSetup.ts --watch",
+    "test:infra": "bun test infra --preload ./tests/infraTestsSetup.ts",
+    "test:integ": "bun test integ --preload ./tests/integTestsSetup.ts",
+    "test:watch": "bun test unit --watch"
+  },
+  "dependencies": {
+    "clone": "^2.1.2",
+    "fastify": "^4.25.2",
+    "lodash.isequal": "^4.5.0",
+    "p-retry": "^6.2.0",
+    "pg": "^8.11.3",
+    "redis": "^4.6.12",
+    "reflect-metadata": "^0.2.1",
+    "typeorm": "^0.3.19",
+    "umzug": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/clone": "^2.1.4",
+    "@types/lodash.isequal": "^4.5.8",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "bun-types": "1.0.25",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "typescript": "5.3.3"
+  }
+}
