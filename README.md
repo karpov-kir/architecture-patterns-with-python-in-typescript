@@ -6,15 +6,10 @@ Basic TypeScript implementation of different patterns from the Architecture Patt
 
 ## Implementations
 
-- [1-a-basicUsingKnex](./1-a-basicUsingKnex)
+- [1-basic](./1-basic)
   - Implementation till the 6 chapter (inclusive)
-  - Entities, Repositories, Unit of Work, Application Services (Use Cases), Unit Tests, Integration Tests, E2E tests
-    - I've implemented entities in a way that they expose only read-only properties leveraging TypeScript types, so no one can change them directly (only via methods, which drive invariants). This approach works just fine, but still might be arguable because of `as` casting (refer to `as PublicProps<P>` in [./1-a-basicUsingKnex/shared/Entity.ts](./1-a-basicUsingKnex/shared/Entity.ts)).
-- [1-b-basicUsingTypeOrm](./1-b-basicUsingTypeOrm)
-  - Implementation till the 6 chapter (inclusive)
-  - The same as in the previous, but using TypeORM instead of Knex plus more and improved tests (more unit tests, more integration tests, more E2E tests, and [Object Mothers](https://martinfowler.com/bliki/ObjectMother.html)), a better web-server abstraction, and Value Objects
-  - I like this implementation more than the Knex one because TypeORM provides better data mapping
-    - NOTE: **All the following implementations use TypeORM**
+  - Entities, Value Objects, Repositories, Unit of Work, Application Services (Use Cases), Unit Tests, Integration Tests, E2E tests, [Object Mothers](https://martinfowler.com/bliki/ObjectMother.html)
+    - I've implemented entities in a way that they expose only read-only properties leveraging TypeScript types, so no one can change them directly (only via methods, which drive invariants). This approach works just fine, but still might be arguable because of `as` casting (refer to `as PublicProps<P>` in [./1-basic/shared/Entity.ts](./1-basic/shared/Entity.ts)).
 - [2-basicAggregates](./2-basicAggregates)
   - Implementation till the 7 chapter (inclusive)
   - The same as in the previous plus Aggregates, Optimistic Concurrency but without messages / events / commands
