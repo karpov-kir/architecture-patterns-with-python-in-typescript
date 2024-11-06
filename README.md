@@ -2,7 +2,7 @@
 
 # Overview
 
-A TypeScript implementation of different patterns from the Architecture Patterns with Python - Enabling Test-Driven Development, Domain-Driven Design, and Event-Driven Microservices book.
+A TypeScript implementation of patterns from the Architecture Patterns with Python - Enabling Test-Driven Development, Domain-Driven Design, and Event-Driven Microservices book.
 
 ## Implementations
 
